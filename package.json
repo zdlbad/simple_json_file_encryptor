@@ -1,0 +1,29 @@
+{
+  "name": "simple_json_file_encryptor",
+  "version": "1.0.1",
+  "description": "Used for encrpyting and restoring a json file",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "simple_json_file_encryptor": "./node npxRun.js" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zdlbad/simple_json_file_encryptor.git"
+  },
+  "keywords": [
+    "json",
+    "encrypt"
+  ],
+  "author": "dlzhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zdlbad/simple_json_file_encryptor/issues"
+  },
+  "homepage": "https://github.com/zdlbad/simple_json_file_encryptor#readme"
+}
