@@ -1,6 +1,6 @@
 {
   "name": "simple_json_file_encryptor",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Used for encrpyting and restoring a json file",
   "main": "index.js",
   "directories": {
