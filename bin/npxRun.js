@@ -1,4 +1,7 @@
-const {secretManager} = require('./src/secret');
+#!/usr/bin/env node
+
+
+const {secretManager} = require('../src/secret');
 
 const key = process.argv[2];
 const filepath = process.argv[3];
