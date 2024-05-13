@@ -1,0 +1,6 @@
+{
+  "dbconnection": {
+    "host": "host",
+    "password": "password"
+  }
+}
