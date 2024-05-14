@@ -41,10 +41,10 @@ const fileEncryptor = {
   // load content from filepath
   encryptFile (filepath, keyInString) {
     const filecontent = fs.readFileSync(filepath);
+    try {JSON.parse(filecontent.toString('utf-8'))} catch (error) {throw new Error(`File content must be in JSON format. error: ${error.message}`);} 
 
     // hash content
     const encryptedContent = this._encryptContent(filecontent, keyInString);
-    try {json.parse(encryptedContent)} catch (error) {throw new Error('File content must be in JSON format.');} 
 
     // save to new file
     try {fs.writeFileSync(filepath + '.crpt', encryptedContent); return filepath + '.crpt';}
