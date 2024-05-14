@@ -1,8 +1,10 @@
-const {secretManager} = require('../src/secret');
+const {fileEncryptor} = require('../src/fileEncryptor');
 
 const key = 'someSecureKey';
-secretManager.saveSecret(__dirname + '/config.json', key);
-const contentRestored = secretManager.readSecret(__dirname + '/config.json_sec', key);
-console.log(contentRestored);
+const savedFilepath = fileEncryptor.encryptFile(__dirname + '/config.json', key);
+console.log(`File encrptyed and saved to file: ${savedFilepath} `);
+
+const contentDecrypted = fileEncryptor.decryptFile(__dirname + '/config.json', key);
+console.log('content restored from file', contentDecrypted);
 
 

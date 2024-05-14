@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const {secretManager} = require('../src/secret');
+const {fileEncryptor} = require('../src/fileEncryptor');
 
 const args = process.argv;
 // must have key specified
@@ -15,6 +15,5 @@ const filepath = args[pathArgIndex+1];
 if (!filepath || !filepath.trim() || filepath.includes('--')) throw new Error('Path cannot be empty');
 
 console.log(`Encrypting file ${filepath} with key provided...`);
-secretManager.saveSecret(filepath, key);
-console.log(`file been secreted and saved to ${filepath}_sec`);
-secretManager.readSecret(filepath+'_sec', key);
+const savedFilepath = fileEncryptor.encryptFile(filepath, key);
+console.log(`file been secreted and saved as ${savedFilepath}`);

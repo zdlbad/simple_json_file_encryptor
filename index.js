@@ -1,5 +1,5 @@
-const {secretManager} = require('./src/secret');
+const {fileEncryptor} = require('./src/fileEncryptor');
 
 module.exports = {
-  secretManager
+  fileEncryptor
 }
