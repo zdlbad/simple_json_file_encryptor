@@ -1,6 +1,6 @@
 {
   "name": "simple_json_file_encryptor",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Used for encrpyting and restoring a file using aes-256-cbc",
   "main": "index.js",
   "directories": {
