@@ -1,6 +1,6 @@
 {
   "name": "simple_json_file_encryptor",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Used for encrpyting and restoring a file using aes-256-cbc",
   "main": "index.js",
   "directories": {
@@ -10,7 +10,7 @@
     "test": "node ./test/test.js"
   },
   "bin": {
-    "simple_json_file_encryptor": "./bin/npxRun.js" 
+    "simple_json_file_encryptor": "./bin/npxRun.js"
   },
   "repository": {
     "type": "git",
@@ -26,4 +26,5 @@
     "url": "https://github.com/zdlbad/simple_json_file_encryptor/issues"
   },
   "homepage": "https://github.com/zdlbad/simple_json_file_encryptor#readme"
+
 }
